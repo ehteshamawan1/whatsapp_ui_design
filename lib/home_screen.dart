@@ -32,34 +32,43 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const Icon(Icons.search),
               const SizedBox(
-                width: 20,
+                width: 7,
               ),
               PopupMenuButton(
+                icon: const Icon(Icons.more_vert, color: Colors.white,),
+                color: const Color(0xff273443),
                 itemBuilder: (context) => [
                   const PopupMenuItem(
                     value: 1,
-                    child: Text('New group'),
+                    child: Text('New group', style: TextStyle(
+                      color: Colors.white,
+                    ),),
                   ),
                   const PopupMenuItem(
                     value: 2,
-                    child: Text('New broadcast'),
+                    child: Text('New broadcast', style: TextStyle(
+                      color: Colors.white,
+                    ),),
                   ),
                   const PopupMenuItem(
                     value: 3,
-                    child: Text('Linked devices'),
+                    child: Text('Linked devices', style: TextStyle(
+                      color: Colors.white,
+                    ),),
                   ),
                   const PopupMenuItem(
                     value: 4,
-                    child: Text('Starred messages'),
+                    child: Text('Starred messages', style: TextStyle(
+                      color: Colors.white,
+                    ),),
                   ),
                  const PopupMenuItem(
                     value: 5,
-                    child: Text('Settings'),
+                    child: Text('Settings', style: TextStyle(
+                      color: Colors.white,
+                    ),),
                   ),
                 ],
-              ),
-              const SizedBox(
-                width: 10,
               ),
             ],
           ),
