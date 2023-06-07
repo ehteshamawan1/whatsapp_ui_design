@@ -24,13 +24,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            body: const TabBarView(
-              children: [
-                Text('Chats'),
-                Text('Status'),
-                Text('Calls'),
-              ],
-            )
         )
     );
   }
