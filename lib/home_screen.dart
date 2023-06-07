@@ -10,11 +10,28 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Whatsapp'),
-        centerTitle: true,
-      ),
+    return DefaultTabController(
+        length: 3,
+        child: Scaffold(
+            appBar: AppBar(
+              title: const Text('Whatsapp'),
+              centerTitle: true,
+              bottom: const TabBar(
+                tabs: [
+                  Text('Chats'),
+                  Text('Status'),
+                  Text('Calls'),
+                ],
+              ),
+            ),
+            body: const TabBarView(
+              children: [
+                Text('Chats'),
+                Text('Status'),
+                Text('Calls'),
+              ],
+            )
+        )
     );
   }
 }
