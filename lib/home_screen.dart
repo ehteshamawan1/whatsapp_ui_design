@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -136,8 +135,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             'https://www.91-cdn.com/hub/wp-content/uploads/2023/03/john-wick-movies-ott.jpg'),
                       ),
                     ),
-                    title: Text('John Wick'),
-                    subtitle: Text('37 minutes ago'),
+                    title: const Text('John Wick'),
+                    subtitle: const Text('37 minutes ago'),
                   );
                 },
               ),
